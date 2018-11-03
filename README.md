@@ -1,6 +1,6 @@
 ﻿# MyReads Project
 
-Project for the Udacity FEND program 
+Project for the Udacity Front-End program 
 
  ## Table of Contents
 
