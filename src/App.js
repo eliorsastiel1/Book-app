@@ -39,7 +39,6 @@ class BooksApp extends Component {
           }))
         );
       } else {
-        debugger;
         var value=event.target.value;
         BooksAPI.update(book, event.target.value).then(
           this.setState(state => ({
@@ -53,7 +52,6 @@ class BooksApp extends Component {
   };
 
   changeShelf1 = (book,value) => {
-    debugger;
     book['shelf']=value;
     return book;
   }

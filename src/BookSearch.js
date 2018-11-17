@@ -55,9 +55,7 @@ class BookSearch extends Component {
 				if (book.id === shelvedBook.id) book.shelf = shelvedBook.shelf;
 			}
 		}
-		debugger;
 		this.setState({ sBooks: sBks });
-		debugger;
 	};
 
 	changeShelf = (book, event) => {
