@@ -48,18 +48,23 @@ class BookSearch extends Component {
 	};
 
 	updateBook = books => {
+		debugger;
 		const sBks = this.state.sBooks;
 		for (const book of sBks) {
 			for (const shelvedBook of books) {
 				if (book.id === shelvedBook.id) book.shelf = shelvedBook.shelf;
 			}
 		}
-
+		debugger;
 		this.setState({ sBooks: sBks });
+		debugger;
 	};
 
 	changeShelf = (book, event) => {
-		this.props.onChangeShelf(book, event).then(books => this.updateBook(books));
+		
+		this.props.onChangeShelf(book, event).then(
+			books => this.updateBook(books)
+		);
 	};
 
 	render() {
