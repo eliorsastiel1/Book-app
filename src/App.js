@@ -35,7 +35,7 @@ class BooksApp extends Component {
                 return b;
               }
             }),
-            isLoaded:false
+            isLoaded:true
           }))
         );
       } else {
@@ -43,7 +43,7 @@ class BooksApp extends Component {
         BooksAPI.update(book, event.target.value).then(
           this.setState(state => ({
             books:state.books.concat(this.changeShelf1(book,value)),
-            isLoaded:false
+            isLoaded:true
          })
         ),resolve(BooksAPI.getAll())
       )
